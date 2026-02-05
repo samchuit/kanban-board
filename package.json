@@ -1,0 +1,13 @@
+{
+  "name": "kanban-board",
+  "version": "1.0.0",
+  "description": "OpenClaw 个人助手看板 - 任务管理与状态追踪",
+  "main": "index.html",
+  "scripts": {
+    "dev": "serve .",
+    "start": "python3 -m http.server 8080"
+  },
+  "keywords": ["kanban", "task-management"],
+  "author": "OpenClaw",
+  "license": "MIT"
+}
