@@ -736,7 +736,7 @@
             e.dataTransfer.effectAllowed = 'move';
         }
         
-.dataTransfer.effect        function handleDragEnd(e) {
+        function handleDragEnd(e) {
             this.classList.remove('dragging');
             document.querySelectorAll('.column').forEach(col => col.classList.remove('drag-over'));
         }
