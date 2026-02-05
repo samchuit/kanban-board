@@ -530,14 +530,25 @@
     <script>
         // 任务数据
         let tasks = JSON.parse(localStorage.getItem('kanbanTasks')) || [
-            { id: 1, title: '配置 Brave Search API', desc: '已完成 API key 配置', priority: 'high', tag: 'feature', status: 'done', createdAt: new Date().toISOString() },
-            { id: 2, title: '配置浏览器自动化', desc: '使用 OpenClaw 管理的 Chrome', priority: 'high', tag: 'feature', status: 'done', createdAt: new Date().toISOString() },
-            { id: 3, title: '查看中证1000期货行情', desc: '了解今日市场表现', priority: 'medium', tag: 'feature', status: 'done', createdAt: new Date().toISOString() },
-            { id: 4, title: '设置每日财经简报', desc: '每天上午8点自动推送', priority: 'medium', tag: 'feature', status: 'done', createdAt: new Date().toISOString() },
-            { id: 5, title: '安装 OpenCode 编程工具', desc: '配置 MiniMax M2.1 模型', priority: 'high', tag: 'feature', status: 'done', createdAt: new Date().toISOString() },
-            { id: 6, title: '开发看板项目', desc: '创建任务管理与状态追踪系统', priority: 'high', tag: 'feature', status: 'progress', createdAt: new Date().toISOString() },
-            { id: 7, title: '测试看板功能', desc: '验证所有功能正常运行', priority: 'medium', tag: 'enhancement', status: 'todo', createdAt: new Date().toISOString() },
-            { id: 8, title: '编写使用文档', desc: '编写 README 和使用指南', priority: 'low', tag: 'docs', status: 'todo', createdAt: new Date().toISOString() },
+            // ========== OpenClaw 个人助手 - 任务状态 ==========
+            
+            // ✅ 已完成任务
+            { id: 1, title: '配置 Brave Search API', desc: 'API Key: BSAp5947MdRwJOBjcap4UfCEH0cA7DG', priority: 'high', tag: 'feature', status: 'done', createdAt: new Date().toISOString() },
+            { id: 2, title: '配置浏览器自动化', desc: '使用 OpenClaw 管理的独立 Chrome', priority: 'high', tag: 'feature', status: 'done', createdAt: new Date().toISOString() },
+            { id: 3, title: '查看中证1000期货行情', desc: '了解今日市场表现，主连价格: 8039.8 (-1.52%)', priority: 'medium', tag: 'feature', status: 'done', createdAt: new Date().toISOString() },
+            { id: 4, title: '设置每日财经简报', desc: '每天上午8点自动推送财经新闻和期货分析', priority: 'medium', tag: 'feature', status: 'done', createdAt: new Date().toISOString() },
+            { id: 5, title: '安装 OpenCode 编程工具', desc: '配置 MiniMax M2.1 / NVIDIA 模型', priority: 'high', tag: 'feature', status: 'done', createdAt: new Date().toISOString() },
+            { id: 6, title: '开发看板项目', desc: '创建 Vercel 看板用于任务管理', priority: 'high', tag: 'feature', status: 'done', createdAt: new Date().toISOString() },
+            { id: 7, title: '部署看板到 Vercel', desc: 'GitHub: samchuit/kanban-board', priority: 'high', tag: 'feature', status: 'done', createdAt: new Date().toISOString() },
+            
+            // 🔥 进行中
+            { id: 8, title: '测试看板功能', desc: '验证所有功能正常运行，修复显示问题', priority: 'high', tag: 'enhancement', status: 'progress', createdAt: new Date().toISOString() },
+            { id: 9, title: '配置 OpenCode AI 认证', desc: '使用 NVIDIA MiniMax M2.1 模型', priority: 'high', tag: 'feature', status: 'progress', createdAt: new Date().toISOString() },
+            
+            // 📝 待办
+            { id: 10, title: '编写 README 文档', desc: '完善项目文档和使用指南', priority: 'low', tag: 'docs', status: 'todo', createdAt: new Date().toISOString() },
+            { id: 11, title: '测试 OpenCode 编程', desc: '使用 Plan → Build 模式开发项目', priority: 'medium', tag: 'feature', status: 'todo', createdAt: new Date().toISOString() },
+            { id: 12, title: '优化看板UI/UX', desc: '根据使用反馈改进界面和交互', priority: 'low', tag: 'enhancement', status: 'todo', createdAt: new Date().toISOString() },
         ];
         
         let draggedTask = null;
