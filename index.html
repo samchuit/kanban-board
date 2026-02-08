@@ -541,15 +541,27 @@
             { id: 6, title: '开发看板项目', desc: '创建 Vercel 看板用于任务管理', priority: 'high', tag: 'feature', status: 'done', createdAt: new Date().toISOString() },
             { id: 7, title: '部署看板到 Vercel', desc: 'GitHub: samchuit/kanban-board', priority: 'high', tag: 'feature', status: 'done', createdAt: new Date().toISOString() },
             { id: 8, title: '测试 MiniMax API 编程', desc: '成功生成并执行 Python 计算器代码', priority: 'high', tag: 'feature', status: 'done', createdAt: new Date().toISOString() },
+            { id: 9, title: '安装 Miniconda 环境', desc: 'Python 3.9 + vnpy 环境', priority: 'high', tag: 'feature', status: 'done', createdAt: new Date('2026-02-08').toISOString() },
+            { id: 10, title: '安装 TA-Lib 库', desc: 'conda install -c conda-forge ta-lib', priority: 'high', tag: 'feature', status: 'done', createdAt: new Date('2026-02-08').toISOString() },
             
-            // 🔥 进行中
-            { id: 8, title: '测试看板功能', desc: '验证所有功能正常运行，修复显示问题', priority: 'high', tag: 'enhancement', status: 'progress', createdAt: new Date().toISOString() },
-            { id: 9, title: '调研量化策略框架', desc: '已完成调研，推荐：阿布量化(abu)、Jesse(数字货币)、Qlib(AI量化)', priority: 'high', tag: 'research', status: 'done', createdAt: new Date().toISOString() },
+            // 🔥 期货策略回测 - 已完成
+            { id: 11, title: 'K019 Simple 回测', desc: '39品种，17正夏普(44%)，最佳P(+29%)', priority: 'high', tag: 'feature', status: 'done', createdAt: new Date('2026-02-08').toISOString() },
+            { id: 12, title: 'K019 Strategy Final', desc: '4品种，100%正夏普，组合收益+20.2%', priority: 'high', tag: 'feature', status: 'done', createdAt: new Date('2026-02-08').toISOString() },
+            { id: 13, title: 'Optimized Strategy (+波动率)', desc: '夏普0.58，胜率53.73%，最佳策略', priority: 'high', tag: 'feature', status: 'done', createdAt: new Date('2026-02-08').toISOString() },
+            { id: 14, title: 'K022 Optimized', desc: '22品种，55%正夏普，平均夏普0.21', priority: 'high', tag: 'feature', status: 'done', createdAt: new Date('2026-02-08').toISOString() },
+            { id: 15, title: 'Term Structure 回测', desc: '夏普-0.89，表现不佳', priority: 'medium', tag: 'feature', status: 'done', createdAt: new Date('2026-02-08').toISOString() },
+            { id: 16, title: 'K019 ML Quick', desc: '10/10正收益，最佳P(夏普195), EB(夏普211)', priority: 'high', tag: 'feature', status: 'done', createdAt: new Date('2026-02-08').toISOString() },
+            { id: 17, title: 'K019 History Best', desc: '8/100%正夏普，平均夏普0.227，组合+51.9%', priority: 'high', tag: 'feature', status: 'done', createdAt: new Date('2026-02-08').toISOString() },
+            { id: 18, title: '策略对比分析', desc: '生成 ALL_STRATEGIES_REPORT.md', priority: 'high', tag: 'feature', status: 'done', createdAt: new Date('2026-02-08').toISOString() },
+            { id: 19, title: '历史优化结果汇总', desc: '生成 HISTORY_OPTIMIZATION_REPORT.md', priority: 'high', tag: 'feature', status: 'done', createdAt: new Date('2026-02-08').toISOString() },
+            { id: 20, title: '修复策略问题', desc: 'sklearn/数据格式/vnpy.app替代方案', priority: 'high', tag: 'bug', status: 'done', createdAt: new Date('2026-02-08').toISOString() },
             
             // 📝 待办
-            { id: 10, title: '编写 README 文档', desc: '完善项目文档和使用指南', priority: 'low', tag: 'docs', status: 'todo', createdAt: new Date().toISOString() },
-            { id: 11, title: '安装 faster-whisper 语音识别', desc: '需要 Python 3.10+，暂时搁置', priority: 'low', tag: 'feature', status: 'todo', createdAt: new Date().toISOString() },
-            { id: 12, title: '优化看板UI/UX', desc: '根据使用反馈改进界面和交互', priority: 'low', tag: 'enhancement', status: 'todo', createdAt: new Date().toISOString() },
+            { id: 21, title: '安装 vnpy_xt 模块', desc: '迅投API配置', priority: 'high', tag: 'feature', status: 'todo', createdAt: new Date().toISOString() },
+            { id: 22, title: '运行真实60分钟回测', desc: '使用迅投实盘数据', priority: 'high', tag: 'feature', status: 'todo', createdAt: new Date().toISOString() },
+            { id: 23, title: '编写 README 文档', desc: '完善项目文档和使用指南', priority: 'low', tag: 'docs', status: 'todo', createdAt: new Date().toISOString() },
+            { id: 24, title: '安装 faster-whisper 语音识别', desc: '需要 Python 3.10+，暂时搁置', priority: 'low', tag: 'feature', status: 'todo', createdAt: new Date().toISOString() },
+            { id: 25, title: '优化看板UI/UX', desc: '根据使用反馈改进界面和交互', priority: 'low', tag: 'enhancement', status: 'todo', createdAt: new Date().toISOString() },
         ];
         
         let draggedTask = null;
